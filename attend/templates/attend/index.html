@@ -1,0 +1,12 @@
+{% extends "attend/layout.html" %}
+
+{% block content %}
+<table>
+    {% for attend in attend_list %}
+    <tr>
+        <td>{{ attend.attend_name }}</td>
+        <td>{{ attend.attend_day }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
